@@ -1,11 +1,15 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Image } from "react-native";
 import React from "react";
+// import Logo from "../assets/img/initial_samkayzee_logo.jpeg";
 
 const Home = () => {
   return (
     <View style={styles.container}>
+      <Image source={require("../assets/img/initial_samkayzee_logo.jpeg")} 
+      style={styles.logo}
+      />
       <Text style={styles.title}>First Expo Project</Text>
-      <Text style={{ marginTop: 10, marginBottom: 30, color: "red" }}>
+      <Text style={{ marginTop: 10, marginBottom: 30, color: "white", fontWeight: "bold" }}>
         Reading List App
       </Text>
 
@@ -48,4 +52,11 @@ const styles = StyleSheet.create({
     marginRight: 10,
     marginLeft: 10,
   },
+
+  logo:{
+    width: 150,
+    height: 150,
+    borderRadius: 20,
+    marginBottom: 10,
+  }
 });
