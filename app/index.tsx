@@ -12,17 +12,6 @@ const Home = () => {
       <Text style={{ marginTop: 10, marginBottom: 30, color: "white", fontWeight: "bold" }}>
         Reading List App
       </Text>
-
-      <View style={styles.card}>
-        <Text style={{ fontSize: 16, fontWeight: "bold" }}>List of Books</Text>
-        <Text style={{ marginTop: 10 }}>
-          1. The Subtle Act of Not Giving a Fuck
-        </Text>
-        <Text style={{ marginTop: 10 }}>2. Rich Dad Poor Dad</Text>
-        <Text style={{ marginTop: 10 }}>3. The Psychology of Money</Text>
-        <Text style={{ marginTop: 10 }}>4. Think And Grow Rich</Text>
-        <Text style={{ marginTop: 10 }}>5. The Alchemist</Text>
-      </View>
     </View>
   );
 };
@@ -57,6 +46,6 @@ const styles = StyleSheet.create({
     width: 150,
     height: 150,
     borderRadius: 20,
-    marginBottom: 10,
+    marginVertical: 20,
   }
 });
