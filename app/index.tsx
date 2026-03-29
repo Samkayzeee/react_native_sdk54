@@ -15,6 +15,7 @@ const Home = () => {
       </Text>
 
       <Link href={"/about"} style={styles.link}>About Page</Link>
+      <Link href={"/contact"} style={styles.link}>Contact Page</Link>
     </View>
   );
 };
@@ -45,6 +46,7 @@ const styles = StyleSheet.create({
   link: {
     fontSize: 12,
     color: "blue",
-    textDecorationStyle: "dashed"
+    borderBottomWidth: 1,
+    borderBottomColor: "blue",
   }
 });
