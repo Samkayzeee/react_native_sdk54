@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, Image } from "react-native";
 import React from "react";
 // import Logo from "../assets/img/initial_samkayzee_logo.jpeg";
+import { Link } from 'expo-router';
 
 const Home = () => {
   return (
@@ -12,6 +13,8 @@ const Home = () => {
       <Text style={{ marginTop: 10, marginBottom: 30, color: "white", fontWeight: "bold" }}>
         Reading List App
       </Text>
+
+      <Link href={"/about"} style={styles.link}>About Page</Link>
     </View>
   );
 };
@@ -29,17 +32,7 @@ const styles = StyleSheet.create({
   title: {
     fontWeight: "bold",
     fontSize: 18,
-    marginBottom: 8,
-  },
-
-  card: {
-    backgroundColor: "#eee",
-    padding: 16,
-    borderRadius: 8,
-    marginBottom: 16,
-    boxShadow: "0 4px 4px rgba(0, 0, 0, 0.1)",
-    marginRight: 10,
-    marginLeft: 10,
+    marginVertical: 20,
   },
 
   logo:{
@@ -47,5 +40,11 @@ const styles = StyleSheet.create({
     height: 150,
     borderRadius: 20,
     marginVertical: 20,
+  },
+
+  link: {
+    fontSize: 12,
+    color: "blue",
+    textDecorationStyle: "dashed"
   }
 });
