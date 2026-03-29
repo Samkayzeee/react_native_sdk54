@@ -8,11 +8,11 @@ const About = () => {
 
   return (
     <View style={styles.container}>
-      <Link href={"/"} style={styles.back}>
+      <Link href={"/"} style={[styles.back, styles.link]}>
         Go back
       </Link>
 
-      <Text style={[styles.title, styles.back]}>About Page</Text>
+      <Text style={[styles.title]}>About Page</Text>
     </View>
   );
 };
@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     position: "relative",
+    width: "100%",
   },
 
   title: {
@@ -37,6 +38,7 @@ const styles = StyleSheet.create({
     color: "blue",
     borderBottomWidth: 1,
     borderBottomColor: "blue",
+    marginVertical: 10,
   },
   back: {
     position: "absolute",

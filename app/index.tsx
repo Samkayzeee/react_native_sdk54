@@ -48,5 +48,6 @@ const styles = StyleSheet.create({
     color: "blue",
     borderBottomWidth: 1,
     borderBottomColor: "blue",
+    marginVertical: 10,
   }
 });
