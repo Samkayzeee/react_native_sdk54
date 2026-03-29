@@ -10,9 +10,6 @@ const Home = () => {
       style={styles.logo}
       />
       <Text style={styles.title}>First Expo Project</Text>
-      <Text style={{ marginTop: 10, marginBottom: 30, color: "white", fontWeight: "bold" }}>
-        Reading List App
-      </Text>
 
       <Link href={"/about"} style={styles.link}>About Page</Link>
       <Link href={"/contact"} style={styles.link}>Contact Page</Link>
@@ -27,7 +24,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "lightgray",
   },
 
   title: {
@@ -37,8 +33,8 @@ const styles = StyleSheet.create({
   },
 
   logo:{
-    width: 150,
-    height: 150,
+    width: 75,
+    height: 75,
     borderRadius: 20,
     marginVertical: 20,
   },
