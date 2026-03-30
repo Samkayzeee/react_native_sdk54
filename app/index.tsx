@@ -3,9 +3,12 @@ import React from "react";
 // import Logo from "../assets/img/initial_samkayzee_logo.jpeg";
 import { Link } from 'expo-router';
 
+// theme component
+import ThemedView from "../components/ThemedView";
+
 const Home = () => {
   return (
-    <View style={styles.container}>
+    <ThemedView style={styles.container}>
       <Image source={require("../assets/img/initial_samkayzee_logo.jpeg")} 
       style={styles.logo}
       />
@@ -13,7 +16,7 @@ const Home = () => {
 
       <Link href={"/about"} style={styles.link}>About Page</Link>
       <Link href={"/contact"} style={styles.link}>Contact Page</Link>
-    </View>
+    </ThemedView>
   );
 };
 
