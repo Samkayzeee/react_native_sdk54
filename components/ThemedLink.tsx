@@ -17,6 +17,7 @@ const ThemedLink: React.FC<ThemedLinkProps> = ({ style, ...props }) => {
         },
         { borderBottomWidth: 1 },
         { marginVertical: 5 },
+        style,
       ]}
       {...props}
     />

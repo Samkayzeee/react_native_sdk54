@@ -16,8 +16,8 @@ const Home = () => {
       />
       <ThemedText title={true}>First Expo Project</ThemedText>
 
-      <ThemedLink href={"/about"} style={styles.link}>About Page</ThemedLink>
-      <ThemedLink href={"/contact"} style={styles.link}>Contact Page</ThemedLink>
+      <ThemedLink href={"/about"} >About Page</ThemedLink>
+      <ThemedLink href={"/contact"} >Contact Page</ThemedLink>
     </ThemedView>
   );
 };
@@ -43,12 +43,4 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     marginVertical: 20,
   },
-
-  link: {
-    fontSize: 12,
-    color: "blue",
-    borderBottomWidth: 1,
-    borderBottomColor: "blue",
-    marginVertical: 10,
-  }
 });
