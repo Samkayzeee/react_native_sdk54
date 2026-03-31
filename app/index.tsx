@@ -5,6 +5,8 @@ import { Link } from 'expo-router';
 
 // theme component
 import ThemedView from "../components/ThemedView";
+import ThemedText from "../components/ThemedText";
+import ThemedLink from "../components/ThemedLink";
 
 const Home = () => {
   return (
@@ -12,10 +14,10 @@ const Home = () => {
       <Image source={require("../assets/img/initial_samkayzee_logo.jpeg")} 
       style={styles.logo}
       />
-      <Text style={styles.title}>First Expo Project</Text>
+      <ThemedText title={true}>First Expo Project</ThemedText>
 
-      <Link href={"/about"} style={styles.link}>About Page</Link>
-      <Link href={"/contact"} style={styles.link}>Contact Page</Link>
+      <ThemedLink href={"/about"} style={styles.link}>About Page</ThemedLink>
+      <ThemedLink href={"/contact"} style={styles.link}>Contact Page</ThemedLink>
     </ThemedView>
   );
 };
