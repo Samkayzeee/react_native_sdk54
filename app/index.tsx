@@ -16,8 +16,8 @@ const Home = () => {
       />
       <ThemedText title={true}>First Expo Project</ThemedText>
 
-      <ThemedLink href={"/about"} >About Page</ThemedLink>
-      <ThemedLink href={"/contact"} >Contact Page</ThemedLink>
+      <ThemedLink href={"/login"} >Login</ThemedLink>
+      <ThemedLink href={"/register"} >Register Your Account</ThemedLink>
     </ThemedView>
   );
 };
