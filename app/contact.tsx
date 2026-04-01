@@ -10,9 +10,6 @@ import ThemedLink from "../components/ThemedLink";
 const Contact = () => {
   return (
     <ThemedView style={styles.container}>
-      <ThemedLink href={"/"} style={[styles.back]}>
-        Home
-      </ThemedLink>
       <ThemedText title={true}>Contact Page</ThemedText>
 
       <View>
