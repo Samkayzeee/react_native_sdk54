@@ -4,7 +4,7 @@ import { Colors } from "../constants/Colors";
 
 type ThemedViewProps = ViewProps;
 
-const ThemedView: React.FC<ThemedViewProps> = ({ style, ...props }) => {
+const ThemedView = ({ style, ...props }: ThemedViewProps) => {
   const colorScheme = useColorScheme();
   const theme = Colors[colorScheme || "light"]; // Fallback to light theme if colorScheme is null
 
