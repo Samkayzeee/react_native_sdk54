@@ -2,9 +2,9 @@ import { StyleSheet, useColorScheme, View, ViewProps } from "react-native";
 import React from "react";
 import { Colors } from "../constants/Colors";
 
-type ThemeCardType = ViewProps;
+type ThemedCardType = ViewProps;
 
-const ThemedCard: React.FC<ThemeCardType> = ({ style, ...props }) => {
+const ThemedCard = ({ style, ...props }: ThemedCardType) => {
   const colorScheme = useColorScheme();
   const theme = Colors[colorScheme || "light"]; // Fallback to light theme if colorScheme is null
   return (

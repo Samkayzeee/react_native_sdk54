@@ -5,7 +5,7 @@ import { Link } from "expo-router";
 
 type ThemedLinkProps = React.ComponentProps<typeof Link>;
 
-const ThemedLink: React.FC<ThemedLinkProps> = ({ style, ...props }) => {
+const ThemedLink = ({ style, ...props }: ThemedLinkProps) => {
   const colorScheme = useColorScheme();
   const theme = Colors[colorScheme || "light"]; // Fallback to light theme if colorScheme is null
   return (
